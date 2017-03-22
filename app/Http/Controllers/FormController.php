@@ -166,7 +166,7 @@ class FormController extends BaseController
         $registros = $this->inscritos($request->input('hora'));
         var_dump($registros->count());
         //exit();
-       if($registros->count() <= 1){
+       if($registros->count() <=11){
 
         $this->store($formulario, $request->input());
 
